@@ -1,0 +1,102 @@
+.register {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+
+  h1 {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 2rem;
+    color: #222;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.2fr;
+    gap: 24px;
+    margin-bottom: 12px;
+
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+  }
+
+  .form-col {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .password-col {
+    // Make sure password requirements box stays close
+    .secure-password-input {
+      width: 100%;
+    }
+  }
+
+  label {
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+
+  input, textarea {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #fafbfc;
+    transition: border 0.2s;
+    &:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+  }
+
+  .seller-option {
+    margin: 10px 0;
+    label {
+      font-weight: 400;
+      font-size: 1rem;
+    }
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
+  }
+
+  button[type="submit"] {
+    margin-top: 18px;
+    padding: 12px 0;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    &:disabled {
+      background: #b3d1ff;
+      cursor: not-allowed;
+    }
+  }
+
+  .error {
+    color: #d32f2f;
+    background: #fff0f0;
+    border: 1px solid #f8d7da;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-top: 8px;
+    text-align: center;
+  }
+}
