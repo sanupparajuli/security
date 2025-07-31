@@ -7,6 +7,8 @@ const GigSchema = new Schema(
       type: String,
       required: true
     },
+    sellerUsername: {
+      type: String,
       required: true,
     },
     title: {
