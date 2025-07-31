@@ -15,9 +15,7 @@ const GigSchema = new Schema(
       type: String,
       required: true,
     },
-    cat:{
-      type: String,
-      required: true
+    
     },
     desc: {
       type: String,
